@@ -41,6 +41,8 @@ header {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  position: relative; /* Ensure header is properly positioned */
+  z-index: 999; /* Ensure header is above other content */
 }
 
 header h1 {
@@ -174,3 +176,4 @@ footer {
     font-size: 1.8em;
   }
 }
+
