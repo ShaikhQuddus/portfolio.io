@@ -68,7 +68,7 @@
     <script>
         // Function to load projects content dynamically
         function loadProjects() {
-            fetch('projects-content.html')
+            fetch('projects.html')
                 .then(response => response.text())
                 .then(text => {
                     document.getElementById('content').innerHTML = text;
@@ -80,7 +80,7 @@
 
         // Function to load dashboard content dynamically
         function loadDashboard() {
-            fetch('dashboard-content.html')
+            fetch('dashboard.html')
                 .then(response => response.text())
                 .then(text => {
                     document.getElementById('content').innerHTML = text;
