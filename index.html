@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Shaikh Abdul Quddus</title>
+    <title>Main Page - Your Name</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <!-- Include Header -->
-    <div id="header"></div>
-    <script>
-        // Fetch and insert the contents of header.html
-        fetch('header.html')
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('header').innerHTML = text;
-            })
-            .catch(error => {
-                console.error('Error fetching header:', error);
-            });
-    </script>
+    <!-- Header Section -->
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li> <!-- Opens projects page in new tab -->
+                <li><a href="dashboard.html" target="_blank">Dashboard</a></li> <!-- Opens dashboard page in new tab -->
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Content Section -->
-    <section id="home">
-        <h2>Welcome to My Portfolio Website</h2>
-        <!-- Add content specific to your homepage -->
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <!-- Add content about yourself here -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- Add content about your skills here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Add contact information here -->
     </section>
 </body>
 </html>
