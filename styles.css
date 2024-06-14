@@ -105,10 +105,3 @@ h2 {
 .contact-section ul li a:hover {
     text-decoration: underline;
 }
-/* Welcome message */
-.welcome-message {
-    text-align: center;
-    font-size: 1.2em;
-    color: #888;
-    margin-bottom: 20px;
-}
