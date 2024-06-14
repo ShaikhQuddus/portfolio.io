@@ -1,179 +1,107 @@
-/* Reset default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
-/* Body styles */
+/* Basic styling for body */
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5 {
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  color: #333;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.8;
-}
-
-/* Container styles */
+/* Container for centralizing content */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header styles */
 header {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: relative; /* Ensure header is properly positioned */
-  z-index: 999; /* Ensure header is above other content */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 3em;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
 }
 
 /* Navigation styles */
-nav {
-  text-align: center;
-  margin-top: 20px;
-}
-
 nav ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    text-align: center;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-  color: #66cdaa;
+    background-color: #555;
 }
 
-/* Section styles */
-section {
-  padding: 40px 0;
+/* Section headings */
+.section {
+    padding: 40px 0;
 }
 
-.section-title {
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.skill {
-  background-color: #66cdaa;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-/* About section */
-.about {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.about p {
-  font-size: 1.2em;
-  line-height: 1.8;
-}
-
-/* Contact section */
-.contact {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.contact-info {
-  margin-top: 20px;
-}
-
-.contact-info p {
-  font-size: 1.2em;
-}
-
-.contact-info a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: #66cdaa;
-}
-
-/* Footer styles */
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-/* Responsive design */
-@media (max-width: 992px) {
-  .container {
-    width: 95%;
-  }
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.5em;
-  }
-  
-  .section-title {
-    font-size: 2.2em;
-  }
-}
-
-@media (max-width: 576px) {
-  nav ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .section-title {
+h2 {
     font-size: 1.8em;
-  }
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About section styles */
+.about-content {
+    text-align: justify;
+}
+
+/* Skills section styles */
+.skills-list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Contact section styles */
+.contact-section ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+}
+
+.contact-section ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
 }
 
