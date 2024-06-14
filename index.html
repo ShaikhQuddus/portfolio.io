@@ -15,29 +15,42 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="projects.html" target="_blank">Projects</a></li> <!-- Opens projects page in new tab -->
-                <li><a href="dashboard.html" target="_blank">Dashboard</a></li> <!-- Opens dashboard page in new tab -->
+                <li><a href="#" onclick="loadProjects()">Projects</a></li> <!-- Load projects dynamically -->
+                <li><a href="#" onclick="loadDashboard()">Dashboard</a></li> <!-- Load dashboard dynamically -->
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <!-- Add content about yourself here -->
+    <!-- Content Section -->
+    <section id="content">
+        <!-- Content will be loaded here dynamically -->
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <!-- Add content about your skills here -->
-    </section>
+    <script>
+        // Function to load projects content dynamically
+        function loadProjects() {
+            fetch('projects-content.html')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('content').innerHTML = text;
+                })
+                .catch(error => {
+                    console.error('Error loading projects:', error);
+                });
+        }
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <!-- Add contact information here -->
-    </section>
+        // Function to load dashboard content dynamically
+        function loadDashboard() {
+            fetch('dashboard-content.html')
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('content').innerHTML = text;
+                })
+                .catch(error => {
+                    console.error('Error loading dashboard:', error);
+                });
+        }
+    </script>
 </body>
 </html>
 
