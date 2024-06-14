@@ -15,12 +15,14 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#" onclick="loadProjects()">Projects</a></li> <!-- Load projects dynamically -->
-                <li><a href="#" onclick="loadDashboard()">Dashboard</a></li> <!-- Load dashboard dynamically -->
+                <li><a href="projects.html" target="_blank">Projects</a></li> <!-- Opens projects page in new tab -->
+                <li><a href="dashboard.html" target="_blank">Dashboard</a></li> <!-- Opens dashboard page in new tab -->
             </ul>
         </nav>
     </header>
-     <section id="about" class="section about-section">
+
+    <!-- About Section -->
+   <section id="about" class="section about-section">
         <h2>About Me</h2>
         <div class="about-content">
             <p>Hello, I'm Shaikh Quddus, a dedicated data scientist with a passion for problem-solving and a solid foundation in mathematics. Holding a Master's degree in Mathematics and specialized training in Data Analytics and Data Science, I bring a unique blend of analytical prowess and technical expertise to every project I undertake.</p>
@@ -30,7 +32,8 @@
             <p>I'm excited about the opportunity to leverage my skills and expertise to make a meaningful impact in the world of data science and beyond. Let's connect and explore how we can collaborate to turn data into actionable insights.</p>
         </div>
     </section>
-    <section id="skills" class="section skills-section">
+
+       <section id="skills" class="section skills-section">
         <h2>Skills</h2>
         <ul class="skills-list">
             <li>Python</li>
@@ -42,13 +45,12 @@
             <li>Mathematics</li>
             <li>Advanced Excel</li>
             <li>Data Analytics</li>
-        
-            
             <li>Data Visualisation</li>
         </ul>
     </section>
 
-    <section id="contact" class="section contact-section">
+
+   <section id="contact" class="section contact-section">
         <h2>Contact Me</h2>
         <ul>
             <li><a href="https://www.linkedin.com/in/shaikhquddus/">LinkedIn</a></li>
@@ -57,39 +59,5 @@
             <li>Mobile No: +918329768539</li>
         </ul>
     </section>
-
-
-
-    <!-- Content Section -->
-    <section id="content">
-        <!-- Content will be loaded here dynamically -->
-    </section>
-
-    <script>
-        // Function to load projects content dynamically
-        function loadProjects() {
-            fetch('projects.html')
-                .then(response => response.text())
-                .then(text => {
-                    document.getElementById('content').innerHTML = text;
-                })
-                .catch(error => {
-                    console.error('Error loading projects:', error);
-                });
-        }
-
-        // Function to load dashboard content dynamically
-        function loadDashboard() {
-            fetch('dashboard.html')
-                .then(response => response.text())
-                .then(text => {
-                    document.getElementById('content').innerHTML = text;
-                })
-                .catch(error => {
-                    console.error('Error loading dashboard:', error);
-                });
-        }
-    </script>
 </body>
 </html>
-
