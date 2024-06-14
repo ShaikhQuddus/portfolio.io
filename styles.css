@@ -39,13 +39,13 @@ p {
 header {
   background: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 /* Navigation styles */
@@ -81,29 +81,61 @@ section {
 }
 
 .section-title {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.project {
-  margin-bottom: 40px;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.project img {
-  max-width: 100%;
-  height: auto;
+.skill {
+  background-color: #66cdaa;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-title {
-  font-size: 1.5em;
-  margin-top: 10px;
+/* About section */
+.about {
+  margin-top: 40px;
+  text-align: center;
 }
 
-.project-description {
-  margin-top: 10px;
+.about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+/* Contact section */
+.contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #66cdaa;
 }
 
 /* Footer styles */
@@ -111,7 +143,7 @@ footer {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   margin-top: 40px;
 }
 
@@ -124,7 +156,11 @@ footer {
 
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+  }
+  
+  .section-title {
+    font-size: 2.2em;
   }
 }
 
@@ -138,4 +174,3 @@ footer {
     font-size: 1.8em;
   }
 }
-
