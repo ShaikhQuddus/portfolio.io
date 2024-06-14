@@ -3,6 +3,13 @@ body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
+/* Welcome message */
+.welcome-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+    margin-bottom: 20px;
+}
 
 /* Basic styling for body */
 body {
