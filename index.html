@@ -8,10 +8,18 @@
 </head>
 <body>
     <!-- Include Header -->
-    <div id="header">
-        <!-- Include the contents of header.html here -->
-        <?php include 'header.html'; ?>
-    </div>
+    <div id="header"></div>
+    <script>
+        // Fetch and insert the contents of header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('header').innerHTML = text;
+            })
+            .catch(error => {
+                console.error('Error fetching header:', error);
+            });
+    </script>
 
     <!-- Content Section -->
     <section id="home">
@@ -20,3 +28,4 @@
     </section>
 </body>
 </html>
+
